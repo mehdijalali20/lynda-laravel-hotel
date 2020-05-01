@@ -1,5 +1,6 @@
 <a href="{{ route('bookings.create') }}"> Add New Booking </a>
-
+<table>
+<tbody>
 @forelse ($bookings as $booking)
 <tr>
     <td>{{ $booking->id }}</td>
@@ -23,3 +24,6 @@
 </tr>
 @empty
 @endforelse
+</tbody>
+</table>
+{{ $bookings->links() }}
