@@ -12,7 +12,6 @@ class Room extends Model
     if (!is_null($roomTypeId)) {
       $query->where('room_type_id', $roomTypeId);
     }
-    
     return $query;
   }
     
