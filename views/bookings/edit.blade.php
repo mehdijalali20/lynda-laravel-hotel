@@ -1,5 +1,5 @@
 <form action="{{ route('bookings.update', ['booking' => $booking]) }}" method="POST">
-	@method('PUT')
+  @method('PUT')
   @include('bookings.fields')
   
   <button type="submit" class="btn btn-primary">Update Reservation</button>
